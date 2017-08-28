@@ -6,7 +6,7 @@ PyTest has been used to organize tests, i.e. a generic test case with parameters
 
 ## Test cases:
 
-# @pytest.mark.parametrize('lot, entryTimeDate, exitTimeDate, result',
+>    #### @pytest.mark.parametrize('lot, entryTimeDate, exitTimeDate, result',
 >                   [('EP', ('03:00', 'PM', '08/25/2017', False),           # 1.Valid entry/exit
 >                           ('04:00', 'PM', '08/25/2017', False), '$ 4.00'),#   time/dates. Dates are selected via popup
 >                    ('EP', ('03:00', 'PM', '08/30/2017', True),            # 2.Entry date after
@@ -22,7 +22,7 @@ PyTest has been used to organize tests, i.e. a generic test case with parameters
 >                    ('VP',  ('01:00', 'AM', 'MM/DD/YYYY', True),           # 7.Invalid date format
 >                            ('02:00', 'AM', 'MM/DD/YYYY', True), FORMAT_ERROR) # Date is typed in
 >                   ]
->#                       )
+> ####                       )
 
 ### 1.Valid entry/exit time/dates. Dates are selected via popup
  > a. Select lot 'Economy Parking' ('EP')
