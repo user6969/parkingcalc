@@ -1,8 +1,8 @@
 #   Parking calculator - test exercise.
 
-Basic test automation for the parking calculator http://adam.goucher.ca/parkcalc using Selenium WebDriver, Python, Pytest.
+Basic test automation for parking calculator http://adam.goucher.ca/parkcalc using Selenium WebDriver, Python, Pytest.
 PageObject model has been used to implement facade methods.
-PyTest has been used to organize tests, i.e. a generic test case with parameters has been created using @pytest.mark.parametrize() fixture
+PyTest has been used to organize tests, i.e. generic test case with parameters has been created using @pytest.mark.parametrize() fixture
 
 ## Test cases:
 
