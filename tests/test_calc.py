@@ -36,9 +36,9 @@ def browser():
 def test_calc(browser, lot, entryTimeDate, exitTimeDate, result):
     browser.get(URL)
     calcpage = CalcPage(browser, URL)
-    calcpage.ChooseLot(lot)
-    calcpage.ChooseEntryTimeDate(*entryTimeDate)
-    calcpage.ChooseExitTimeDate(*exitTimeDate)
-    calcpage.Calculate()
+    calcpage.choose_lot(lot)
+    calcpage.choose_entry_time_date(*entryTimeDate)
+    calcpage.choose_exit_time_date(*exitTimeDate)
+    calcpage.calculate()
     assert Utils(browser).price() == result
 

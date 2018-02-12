@@ -1,4 +1,5 @@
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 from locators import *
 from time import sleep
 
@@ -113,7 +114,7 @@ class Utils(object):
             cost = els[0].text
             #duration = els[1].text
             return cost
-        except:
+        except NoSuchElementException:
             el = self.driver.find_element(*CalcPageLocators.Error)
             error = el.text
             return error

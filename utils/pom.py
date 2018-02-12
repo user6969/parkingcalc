@@ -15,33 +15,33 @@ class BasePage(object):
 
 class CalcPage(BasePage):
 
-    def ChooseLot(self, lot):
+    def choose_lot(self, lot):
         self.actions.select_lot(lot)
 
-    def ChooseEntryTimeDate(self, time, ampm, date, type_in):
+    def choose_entry_time_date(self, time, ampm, date, type_in):
         self.actions.select_entry_time(time)
         self.actions.select_entry_ampm(ampm)
         self.actions.select_entry_date(date, type_in)
 
-    def ChooseExitTimeDate(self, time, ampm, date, type_in):
+    def choose_exit_time_date(self, time, ampm, date, type_in):
         self.actions.select_exit_time(time)
         self.actions.select_exit_ampm(ampm)
         self.actions.select_exit_date(date, type_in)
 
-    def Calculate(self):
+    def calculate(self):
         self.actions.calculate()
 
-    def Price(self):
+    def price(self):
         self.actions.price()
 
 
 class PickDate(BasePage):
 
-    def SelectMonth(self, month):
+    def select_month(self, month):
         self.actions.select_month(month)
 
-    def SelectYear(self, year):
+    def select_year(self, year):
         self.actions.select_year(year)
 
-    def SelectDay(self, day):
+    def select_day(self, day):
         self.actions.select_day(day)
